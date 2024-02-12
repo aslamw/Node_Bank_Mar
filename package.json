@@ -1,0 +1,26 @@
+{
+  "name": "node_bank_mar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aslamw/Node_Bank_Mar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aslamw/Node_Bank_Mar/issues"
+  },
+  "homepage": "https://github.com/aslamw/Node_Bank_Mar#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sequelize": "^6.37.0",
+    "sqlite3": "^5.1.7"
+  }
+}
