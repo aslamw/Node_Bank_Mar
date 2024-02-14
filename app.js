@@ -1,6 +1,7 @@
 const express = require("express")
 const DB = require("./src/Models/DB")
-const User = require("./src/Models/User/user_tb")
+
+require("./src/Models/User/user_tb")
 
 const user = require("./src/Views/user")
 
@@ -17,7 +18,7 @@ app.listen(port, ()=>{
     DB.sync()
         .then(() => {
             console.log('Modelo sincronizado com o banco de dados');
-            console.log("Server OK porta:",port);
+            console.log("Server OK port:",port);
             
         })
         .catch((err) => {

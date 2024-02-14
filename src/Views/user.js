@@ -1,14 +1,11 @@
 const express = require("express")
+const { create_user, get_user_id } = require("../Controllers/user")
 
 const user = express()
 
 
-user.get('/',(req, res)=>{
-    res.send('user router ok')
-})
-user.post('/user/register',(req, res)=>{
-    const data = req.body
-    res.send('user router ok')
-})
+user.get('/:id',get_user_id)
+
+user.post('/user/register',create_user)
 
 module.exports = user
